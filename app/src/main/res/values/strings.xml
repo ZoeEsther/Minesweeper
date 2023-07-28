@@ -1,0 +1,42 @@
+<resources>
+
+    //MainActivity
+    <string name="name">扫雷大作战</string>
+    <string name="StartGame">游客登录</string>
+    <string name="StartGame1">开始游戏</string>
+    <string name="LogGame">用户登录</string>
+    <string name="RegisterGame">用户注册</string>
+    <string name="ExitGame">退出游戏</string>
+    <string name="Username">请输入用户名</string>
+    <string name="password">请输入密码</string>
+    <string name="start">开始游戏</string>
+    <string name="register">确定注册</string>
+    //MainActivity
+    <string name="app_name">扫雷小游戏</string>
+    <string name="difficult_level">等级选择</string>
+    <string name="Beginner">初级</string>
+    <string name="Beginer_explanation1">地雷个数：30 </string>
+    <string name="Beginer_explanation2">网格数目：15 * 20</string>
+    <string name="Intermediate">中级</string>
+    <string name="Intermediate_explanation1">地雷个数：50 </string>
+    <string name="Intermediate_explanation2">网格数目：15 * 20</string>
+    <string name="Advanced">高级</string>
+    <string name="Advanced_explanation1">地雷个数：80 </string>
+    <string name="Advanced_explanation2">网格数目：15 * 20</string>
+    //GameActivity
+    <string name="level_label">游戏等级：</string>
+    <string name="level">初级</string>
+    <string name="detail1">地雷数</string>
+    <string name="detail2">网格数</string>
+    <string name="time">待定：时间</string>
+    <string name="GameSquare">这是一个游戏小方块</string>
+
+    // 游戏说明
+    <string name="GameInstructioin1">游戏说明：</string>
+    <string name="GameInstructioin2">①点击小方块可进行扫雷；长按可将您认为是雷区的方块做红旗标记，若再次点击该方块可取消红旗标记。</string>
+    <string name="GameInstructioin3">②查出所有雷，并做红旗标记，即可赢得游戏。 </string>
+
+    <string name="message1">账号或密码不能为空</string>
+    <string name="press_login_button1">欢迎登陆！</string>
+    <string name="press_login_button2">登录失败！用户名或密码不正确！</string>
+</resources>

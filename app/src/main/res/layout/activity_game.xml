@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@mipmap/bg1"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:id="@+id/GameLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Game_level_label"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/level_label"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/Game_level"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/level"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+        <Chronometer
+            android:id="@+id/GameTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_weight="10"/>
+        <TextView
+            android:id="@+id/mine_number"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/bomb"
+            android:text="@string/detail1"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/grid_number"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/block1"
+            android:text="@string/detail2"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/grid_gameboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:numColumns="15"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp"
+        android:layout_gravity="center"
+        android:background="#D9D9D9"/>
+
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below = "@+id/grid_gameboard"
+        android:text ="@string/GameInstructioin1" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below = "@+id/text1"
+        android:text ="@string/GameInstructioin2" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/text2"
+        android:layout_marginLeft="30dp"
+        android:text ="@string/GameInstructioin3" />
+
+</LinearLayout>

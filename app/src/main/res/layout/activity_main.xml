@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@mipmap/bg">
+
+        <TextView
+            android:id="@+id/Gamename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginBottom="120dp"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            android:text="@string/name"
+            android:textColor="#CF4137"
+            android:textSize="55sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btmLogGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_startgame"
+            android:text="@string/LogGame"
+            android:textColor="#F3E6E6"
+            android:textSize="23sp" />
+        <Button
+            android:id="@+id/btmRegisterGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_startgame"
+            android:text="@string/RegisterGame"
+            android:textColor="#F3E6E6"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/btmExitGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/btn_startgame"
+            android:text="@string/ExitGame"
+            android:textColor="#F3E6E6"
+            android:textSize="23sp" />
+
+
+
+</LinearLayout>

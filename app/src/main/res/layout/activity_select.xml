@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context=".SelectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/igvBackMain"
+            android:layout_width="43dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-30dp"
+            android:textColor="#CF4137"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:id="@+id/kuang"
+            android:layout_width="500dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="-40dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/kuang"
+            tools:layout_marginTop="-20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-120dp"
+            android:orientation="vertical"
+            android:text="@string/difficult_level"
+            android:textColor="#F3E6E6"
+            android:textSize="26sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/btnBeginner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_500"
+                android:checked="false"
+                android:text="@string/Beginner"
+                android:textColor="#CF4137"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Beginer_explanation1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Beginer_explanation2"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/btnIntermediate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_500"
+                android:text="@string/Intermediate"
+                android:textColor="#CF4137"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Intermediate_explanation1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Intermediate_explanation2"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/btnAdvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_500"
+                android:text="@string/Advanced"
+                android:textColor="#CF4137"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Advanced_explanation1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Advanced_explanation2"
+                android:textSize="15sp" />
+
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/selectbomb"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="-80dp"
+            android:src="@drawable/bomb1" />
+
+        <Button
+            android:id="@+id/musicchoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/btn_startgame"
+            android:text="选择音乐"
+            android:textColor="#E3DBDA"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/btmStartGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_startgame"
+            android:text="@string/StartGame1"
+            android:textColor="#F3E6E6"
+            android:textSize="23sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

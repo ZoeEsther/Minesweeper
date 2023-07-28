@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="fill_parent"-->
+<!--    android:layout_height="fill_parent"-->
+<!--    android:background="@mipmap/bg"-->
+<!--    android:orientation="vertical">-->
+<com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    app:rb_color="#F44336"
+    app:rb_duration="3000"
+    app:rb_radius="60dp"
+    app:rb_rippleAmount="8"
+    app:rb_scale="6">
+
+    <ImageView
+        android:id="@+id/igvBackGame"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/backmusic" />
+
+    <!--        android:background="@drawable/button_shape"-->
+    <ImageView
+        android:id="@+id/centerImage"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bomb3" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#8DFBF8F8"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:thumb="@drawable/ic_action_search" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:thumb="@drawable/ic_action_search" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--        android:layout_alignParentBottom="true"-->
+
+
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FDFCFC"
+                android:src="@drawable/play6" />
+
+            <ImageButton
+                android:id="@+id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:src="@drawable/stop11" />
+
+            <ImageButton
+                android:id="@+id/pre"
+                android:layout_width="38dp"
+                android:layout_height="41dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/pre9" />
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="38dp"
+                android:layout_height="41dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/next1" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="83dp"
+                    android:layout_height="16dp"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--</RelativeLayout>-->
+</com.skyfishjy.library.RippleBackground>
